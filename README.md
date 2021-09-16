@@ -33,4 +33,4 @@ Forward delete, home, and end keys.
 <img width="503" alt="image" src="https://user-images.githubusercontent.com/90871823/133690533-74888754-fe8d-424c-9b3c-8aaeef6893c8.png">
 6. Put my items.json in ~/Library/Application\ Support/MTMR/
 
-8. Enjoy :)
+Enjoy :)
