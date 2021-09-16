@@ -21,8 +21,9 @@ Forward delete, home, and end keys.
 
 # How to Set up:
 
-1. Go to System Preferences > Keyboard > Shortcuts > Mission Control
-2. Check "Switch to Desktop [1-10] and set the keyboard shortcuts to control+[1,2,3...0]
+1. Open spotlight and search "Mission Control" and add desktops until you have 10
+2. Go to System Preferences > Keyboard > Shortcuts > Mission Control
+3. Check "Switch to Desktop [1-10] and set the keyboard shortcuts to control+[1,2,3...0]
 
 <img width="646" alt="image" src="https://user-images.githubusercontent.com/90871823/133690437-90670d3d-e017-4fe1-b44c-5588c9253044.png">
 
