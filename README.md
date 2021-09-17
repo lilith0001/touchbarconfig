@@ -1,5 +1,5 @@
 # touchbarconfig
-<img width="1004" alt="image" src="https://user-images.githubusercontent.com/90871823/133690605-8dba43a4-638e-41c7-926e-b10a2df1eaf3.png">
+<img width="1004" alt="image" src="https://user-images.githubusercontent.com/90871823/133862059-3563767e-ef09-412a-999f-86c478265402.png">
 
 # What does it do?
 
