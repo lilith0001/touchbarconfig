@@ -3,9 +3,9 @@
 
 # What does it do?
 
-The icons labelled I-X will move you to workspaces 1-10 when you press them.
+The icons labelled I-X will move you to desktops 1-10 when you press them. Square brackets will indicate the current desktop.
 
-When you hold them, they will send your focused window to the specified workspace.
+When you hold them, they will send your focused window to the specified desktop.
 
 Drag 2 fingers to adjust volume.
 
