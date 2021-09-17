@@ -1,90 +1,101 @@
 [
-{ 
-  "title": "I", "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
-  "actionAppleScript": { "inline": "tell application \"System Events\" to key code 18 using control down" },
-  "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 18 using {control down, option down}" }
-},
-{
-  "title": "II", "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
-  "actionAppleScript": { "inline": "tell application \"System Events\" to key code 19 using control down" },
-  "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 19 using {control down, option down}" }
-},
-{
-  "title": "III", "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
-  "actionAppleScript": { "inline": "tell application \"System Events\" to key code 20 using control down" },
-  "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 20 using {control down, option down}" }
-},
-{
-  "title": "IV", "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
-  "actionAppleScript": { "inline": "tell application \"System Events\" to key code 21 using control down" },
-  "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 21 using {control down, option down}" }
-},
-{
-  "title": "V", "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
-  "actionAppleScript": { "inline": "tell application \"System Events\" to key code 23 using control down" },
-  "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 23 using {control down, option down}" }
-},
-{
-  "title": "VI", "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
-  "actionAppleScript": { "inline": "tell application \"System Events\" to key code 22 using control down" },
-  "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 22 using {control down, option down}" }
-},
-{
-  "title": "VII", "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
-  "actionAppleScript": { "inline": "tell application \"System Events\" to key code 26 using control down" },
-  "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 26 using {control down, option down}" }
-},
-{
-  "title": "VIII", "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
-  "actionAppleScript": { "inline": "tell application \"System Events\" to key code 28 using control down" },
-  "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 28 using {control down, option down}" }
-},
-{
-  "title": "IX", "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
-  "actionAppleScript": { "inline": "tell application \"System Events\" to key code 25 using control down" },
-  "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 25 using {control down, option down}" }
-},
-{
-  "title": "X", "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
-  "actionAppleScript": { "inline": "tell application \"System Events\" to key code 29 using control down" },
-  "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 29 using {control down, option down}" }
-},
-{
-  "title": "screenshot", "type": "group", "items": 
-  [ 
-    { "type": "close", "bordered": true },
-    {
-      "title": "screen to clipboard   |", "type": "staticButton", "bordered": false, "action": "appleScript",
-      "actionAppleScript": {"inline": "do shell script \"screencapture -c\"" }
-    },
-    {
-      "title": "selection to clipboard    |", "type": "staticButton", "bordered": false, "action": "appleScript",
-      "actionAppleScript": {"inline": "do shell script \"screencapture -i -c ~/Desktop/\"" }
-    },
-    {
-      "title": "screen to desktop   |", "type": "staticButton", "bordered": false, "action": "appleScript",
-      "actionAppleScript": {"inline": "\"Screen Shot \" & (current date) & \".png\"\r do shell script \"screencapture ~/Desktop/\" & quoted form of result" }
-    },
-    {
-      "title": "  selection to desktop", "type": "staticButton", "bordered": false, "action": "appleScript",
-      "actionAppleScript": {"inline": "\"Screen Shot \" & (current date) & \".png\"\r do shell script \"screencapture -i ~/Desktop/\" & quoted form of result" }
-    }
+  { 
+    "title": "[ I ]",
+    "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
+    "actionAppleScript": { "inline": "tell application \"System Events\" to key code 18 using control down\r do shell script \"python3 ~/.touchbar.py -w 1\"" },
+    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 18 using {control down, option down}" }
+  },
+  {
+    "title": "II",
+    "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
+    "actionAppleScript": { "inline": "tell application \"System Events\" to key code 19 using control down\r do shell script \"python3 ~/.touchbar.py -w 2\"" },
+    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 19 using {control down, option down}" }
+  },
+  {
+    "title": "III",
+    "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
+    "actionAppleScript": { "inline": "tell application \"System Events\" to key code 20 using control down\r do shell script \"python3 ~/.touchbar.py -w 3\"" },
+    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 20 using {control down, option down}" }
+  },
+  {
+    "title": "IV",
+    "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
+    "actionAppleScript": { "inline": "tell application \"System Events\" to key code 21 using control down\r do shell script \"python3 ~/.touchbar.py -w 4\"" },
+    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 21 using {control down, option down}" }
+  },
+  {
+    "title": "V",
+    "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
+    "actionAppleScript": { "inline": "tell application \"System Events\" to key code 23 using control down\r do shell script \"python3 ~/.touchbar.py -w 5\"" },
+    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 23 using {control down, option down}" }
+  },
+  {
+    "title": "VI",
+    "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
+    "actionAppleScript": { "inline": "tell application \"System Events\" to key code 22 using control down\r do shell script \"python3 ~/.touchbar.py -w 6\"" },
+    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 22 using {control down, option down}" }
+  },
+  {
+    "title": "VII",
+    "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
+    "actionAppleScript": { "inline": "tell application \"System Events\" to key code 26 using control down\r do shell script \"python3 ~/.touchbar.py -w 7\"" },
+    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 26 using {control down, option down}" }
+  },
+  {
+    "title": "VIII",
+    "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
+    "actionAppleScript": { "inline": "tell application \"System Events\" to key code 28 using control down\r do shell script \"python3 ~/.touchbar.py -w 8\"" },
+    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 28 using {control down, option down}" }
+  },
+  {
+    "title": "IX",
+    "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
+    "actionAppleScript": { "inline": "tell application \"System Events\" to key code 25 using control down\r do shell script \"python3 ~/.touchbar.py -w 9\"" },
+    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 25 using {control down, option down}" }
+  },
+  {
+    "title": "X",
+    "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
+    "actionAppleScript": { "inline": "tell application \"System Events\" to key code 29 using control down\r do shell script \"python3 ~/.touchbar.py -w 10\"" },
+    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 29 using {control down, option down}" }
+  },
+  {
+    "title": "screenshot", "type": "group", "items": 
+    [ 
+      { "type": "close", "bordered": true },
+      {
+        "title": "screen to clipboard   |", "type": "staticButton", "bordered": false, "action": "appleScript",
+        "actionAppleScript": {"inline": "do shell script \"screencapture -c\"" }
+      },
+      {
+        "title": "selection to clipboard    |", "type": "staticButton", "bordered": false, "action": "appleScript",
+        "actionAppleScript": {"inline": "do shell script \"screencapture -i -c ~/Desktop/\"" }
+      },
+      {
+        "title": "screen to desktop   |", "type": "staticButton", "bordered": false, "action": "appleScript",
+        "actionAppleScript": {"inline": "\"Screen Shot \" & (current date) & \".png\"\r do shell script \"screencapture ~/Desktop/\" & quoted form of result" }
+      },
+      {
+        "title": "  selection to desktop", "type": "staticButton", "bordered": false, "action": "appleScript",
+        "actionAppleScript": {"inline": "\"Screen Shot \" & (current date) & \".png\"\r do shell script \"screencapture -i ~/Desktop/\" & quoted form of result" }
+      }
+    ]
+  },
+  { "type": "dnd",   "bordered": false, "width": 35 },
+  { "type": "illuminationDown", "bordered": false, "width": 30, "align": "right" },
+  { "type": "illuminationUp",   "bordered": false, "width": 30, "align": "right" },
+  { "type": "previous",   "bordered": false, "width": 35, "align": "right" },
+  { "type": "play",       "bordered": false, "width": 35, "align": "right"},
+  { "type": "next",       "bordered": false, "width": 35, "align": "right" },
+  { "type": "mute",       "bordered": false, "width": 35, "align": "right" },
+  {
+    "title": "del", "type": "staticButton", "action": "appleScript", "bordered": false, "align":"right", "width": 65,
+    "actionAppleScript": { "inline":"tell application \"System Events\" to key code 2 using control down" }
+  },
+  {
+    "title": "home", "type": "staticButton", "action": "keyPress", "bordered": false, "align": "right", "width": 55, "keycode": 115
+  },
+  {
+    "title": "end", "type": "staticButton", "action": "keyPress", "bordered": false, "align": "right", "width": 55, "keycode": 119
+  }
   ]
-},
-{ "type": "illuminationDown", "bordered": false, "width": 30, "align": "right" },
-{ "type": "illuminationUp",   "bordered": false, "width": 30, "align": "right" },
-{ "type": "previous",   "bordered": false, "width": 35, "align": "right" },
-{ "type": "play",       "bordered": false, "width": 35, "align": "right"},
-{ "type": "next",       "bordered": false, "width": 35, "align": "right" },
-{ "type": "mute",       "bordered": false, "width": 35, "align": "right" },
-{
-  "title": "del", "type": "staticButton", "action": "appleScript", "bordered": false, "align":"right", "width": 70,
-  "actionAppleScript": { "inline":"tell application \"System Events\" to key code 2 using control down" }
-},
-{
-  "title": "home", "type": "staticButton", "action": "keyPress", "bordered": false, "align": "right", "width": 70, "keycode": 115
-},
-{
-  "title": "end", "type": "staticButton", "action": "keyPress", "bordered": false, "align": "right", "width": 70, "keycode": 119
-}
-]
