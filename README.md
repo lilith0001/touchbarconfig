@@ -41,6 +41,8 @@ Further development is needed to get system updates to script window monitoring 
 4. Install Amethyst https://github.com/ianyh/Amethyst
 5. Clone my repository to ~
 
-6. Move my items.json to ~/Library/Application\ Support/MTMR/
+6. run the command `python3 ~/touchbarconfig/setup.py`
+7. start Amethyst
+8. start MTMR
 
 Enjoy :)
