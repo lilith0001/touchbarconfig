@@ -1,49 +1,116 @@
 import argparse
 from pathlib import Path
 
-user = Path('~').expanduser()
-items = str(user) + '/Library/Application Support/MTMR/items.json'
+homePath = Path('~').expanduser()
+jsonPath = str(homePath) + '/Library/Application Support/MTMR/items.json'
+configPath = str(homePath) + '/touchbarconfig/.config'
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-w", "--workspace", type=int)
+parser.add_argument("-m", "--windowDest", type=int)
 args = parser.parse_args()
 workspace = args.workspace
+windowDest = args.windowDest
 
-fin = open(items, "rt")
-data = fin.read()
-data = data.replace('    "title": "[ I ]",',    '    "title": "I",')
-data = data.replace('    "title": "[ II ]",',   '    "title": "II",')
-data = data.replace('    "title": "[ III ]",',  '    "title": "III",')
-data = data.replace('    "title": "[ IV ]",',   '    "title": "IV",')
-data = data.replace('    "title": "[ V ]",',    '    "title": "V",')
-data = data.replace('    "title": "[ VI ]",',   '    "title": "VI",')
-data = data.replace('    "title": "[ VII ]",',  '    "title": "VII",')
-data = data.replace('    "title": "[ VIII ]",', '    "title": "VIII",')
-data = data.replace('    "title": "[ IX ]",',   '    "title": "IX",')
-data = data.replace('    "title": "[ X ]",',    '    "title": "X",')
+json = open(jsonPath, "rt")
+jsonBuffer = json.read()
+json.close()
 
-if(workspace == 1):
-    data = data.replace('    "title": "I",',    '    "title": "[ I ]",')
-elif(workspace == 2):
-    data = data.replace('    "title": "II",',   '    "title": "[ II ]",')
-elif(workspace == 3):
-    data = data.replace('    "title": "III",',  '    "title": "[ III ]",')
-elif(workspace == 4):
-    data = data.replace('    "title": "IV",',   '    "title": "[ IV ]",')
-elif(workspace == 5):
-    data = data.replace('    "title": "V",',    '    "title": "[ V ]",')
-elif(workspace == 6):
-    data = data.replace('    "title": "VI",',   '    "title": "[ VI ]",')
-elif(workspace == 7):
-    data = data.replace('    "title": "VII",',  '    "title": "[ VII ]",')
-elif(workspace == 8):
-    data = data.replace('    "title": "VIII",', '    "title": "[ VIII ]",')
-elif(workspace == 9):
-    data = data.replace('    "title": "IX",',   '    "title": "[ IX ]",')
-elif(workspace == 10):
-    data = data.replace('    "title": "X",',    '    "title": "[ X ]",')
+if(workspace != None):
+    print(workspace)
+    
+    # removing all old titles
+    jsonBuffer = jsonBuffer.replace('    "title": "[ 1 ]', '    "title": "1')
+    jsonBuffer = jsonBuffer.replace('    "title": "[ 2 ]', '    "title": "2')
+    jsonBuffer = jsonBuffer.replace('    "title": "[ 3 ]', '    "title": "3')
+    jsonBuffer = jsonBuffer.replace('    "title": "[ 4 ]', '    "title": "4')
+    jsonBuffer = jsonBuffer.replace('    "title": "[ 5 ]', '    "title": "5')
+    jsonBuffer = jsonBuffer.replace('    "title": "[ 6 ]', '    "title": "6')
+    jsonBuffer = jsonBuffer.replace('    "title": "[ 7 ]', '    "title": "7')
+    jsonBuffer = jsonBuffer.replace('    "title": "[ 8 ]', '    "title": "8')
+    jsonBuffer = jsonBuffer.replace('    "title": "[ 9 ]', '    "title": "9')
+    jsonBuffer = jsonBuffer.replace('    "title": "[ 0 ]', '    "title": "0')
 
-fin.close()
-fin = open(items, "wt")
-fin.write(data)
-fin.close()
+    # adding new titles
+    if(workspace == 1):
+        jsonBuffer = jsonBuffer.replace('    "title": "1', '    "title": "[ 1 ]')
+    elif(workspace == 2):
+        jsonBuffer = jsonBuffer.replace('    "title": "2', '    "title": "[ 2 ]')
+    elif(workspace == 3):
+        jsonBuffer = jsonBuffer.replace('    "title": "3', '    "title": "[ 3 ]')
+    elif(workspace == 4):
+        jsonBuffer = jsonBuffer.replace('    "title": "4', '    "title": "[ 4 ]')
+    elif(workspace == 5):
+        jsonBuffer = jsonBuffer.replace('    "title": "5', '    "title": "[ 5 ]')
+    elif(workspace == 6):
+        jsonBuffer = jsonBuffer.replace('    "title": "6', '    "title": "[ 6 ]')
+    elif(workspace == 7):
+        jsonBuffer = jsonBuffer.replace('    "title": "7', '    "title": "[ 7 ]')
+    elif(workspace == 8):
+        jsonBuffer = jsonBuffer.replace('    "title": "8', '    "title": "[ 8 ]')
+    elif(workspace == 9):
+        jsonBuffer = jsonBuffer.replace('    "title": "9', '    "title": "[ 9 ]')
+    elif(workspace == 10):
+        jsonBuffer = jsonBuffer.replace('    "title": "0', '    "title": "[ 0 ]')
+
+    # updating config to reflect current workspace
+    config = open(configPath, "wt")
+    config.write(str(workspace))
+    print('wrote workspace ' + str(workspace))
+    config.close()
+
+
+
+# add quotations to track the number of windows in workspaces
+if(windowDest != None):
+
+    # removing old mark in source
+    config = open(configPath, "rt")
+    currentWorkspace = config.read()
+    config.close()
+    if(currentWorkspace == '1'):
+        jsonBuffer = jsonBuffer.replace('    "title": "[ 1 ]\'', '    "title": "[ 1 ]')
+    if(currentWorkspace == '2'):
+        jsonBuffer = jsonBuffer.replace('    "title": "[ 2 ]\'', '    "title": "[ 2 ]')
+    if(currentWorkspace == '3'):
+        jsonBuffer = jsonBuffer.replace('    "title": "[ 3 ]\'', '    "title": "[ 3 ]')
+    if(currentWorkspace == '4'):
+        jsonBuffer = jsonBuffer.replace('    "title": "[ 4 ]\'', '    "title": "[ 4 ]')
+    if(currentWorkspace == '5'):
+        jsonBuffer = jsonBuffer.replace('    "title": "[ 5 ]\'', '    "title": "[ 5 ]')
+    if(currentWorkspace == '6'):
+        jsonBuffer = jsonBuffer.replace('    "title": "[ 6 ]\'', '    "title": "[ 6 ]')
+    if(currentWorkspace == '7'):
+        jsonBuffer = jsonBuffer.replace('    "title": "[ 7 ]\'', '    "title": "[ 7 ]')
+    if(currentWorkspace == '8'):
+        jsonBuffer = jsonBuffer.replace('    "title": "[ 8 ]\'', '    "title": "[ 8 ]')
+    if(currentWorkspace == '9'):
+        jsonBuffer = jsonBuffer.replace('    "title": "[ 9 ]\'', '    "title": "[ 9 ]')
+    if(currentWorkspace == '0'):
+        jsonBuffer = jsonBuffer.replace('    "title": "[ 0 ]\'', '    "title": "[ 0 ]')
+    
+    # adding new mark in destination
+    if(windowDest == 1):
+        jsonBuffer = jsonBuffer.replace('    "title": "1', '    "title": "1\'')
+    elif(windowDest == 2):
+        jsonBuffer = jsonBuffer.replace('    "title": "2', '    "title": "2\'')
+    elif(windowDest == 3):
+        jsonBuffer = jsonBuffer.replace('    "title": "3', '    "title": "3\'')
+    elif(windowDest == 4):
+        jsonBuffer = jsonBuffer.replace('    "title": "4', '    "title": "4\'')
+    elif(windowDest == 5):
+        jsonBuffer = jsonBuffer.replace('    "title": "5', '    "title": "5\'')
+    elif(windowDest == 6):
+        jsonBuffer = jsonBuffer.replace('    "title": "6', '    "title": "6\'')
+    elif(windowDest == 7):
+        jsonBuffer = jsonBuffer.replace('    "title": "7', '    "title": "7\'')
+    elif(windowDest == 8):
+        jsonBuffer = jsonBuffer.replace('    "title": "8', '    "title": "8\'')
+    elif(windowDest == 9):
+        jsonBuffer = jsonBuffer.replace('    "title": "9', '    "title": "9\'')
+    elif(windowDest == 10):
+        jsonBuffer = jsonBuffer.replace('    "title": "0', '    "title": "0\'')
+
+json = open(jsonPath, "wt")
+json.write(jsonBuffer)
+json.close()
