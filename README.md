@@ -8,6 +8,8 @@ The icons labelled I-X will move you to desktops 1-10 when you press them.
 Square brackets will indicate the current desktop.
 
 Quotation marks indicate how many windows are in each desktop (NOT FULLY WORKING, SEE LIMITATIONS)
+<img width="1004" alt="image" src="https://user-images.githubusercontent.com/90871823/133889836-d8a90df7-b311-4b6e-aaac-61bb3b72a893.png">
+
 
 When you hold them, they will send your focused window to the specified desktop.
 
