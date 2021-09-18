@@ -3,61 +3,61 @@
     "title": "1",
     "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
     "actionAppleScript": { "inline": "tell application \"System Events\" to key code 18 using control down\r do shell script \"python3 ~/touchbarconfig/touchbar.py -w 1\"" },
-    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 18 using {control down, option down}\r do shell script \"python3 ~/touchbarconfig/touchbar.py -m 1\"" }
+    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 18 using {control down, option down, shift down}\r do shell script \"python3 ~/touchbarconfig/touchbar.py -m 1\"" }
   },
   {
-    "title": "2'''",
+    "title": "[ 2 ]'",
     "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
     "actionAppleScript": { "inline": "tell application \"System Events\" to key code 19 using control down\r do shell script \"python3 ~/touchbarconfig/touchbar.py -w 2\"" },
-    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 19 using {control down, option down}\r do shell script \"python3 ~/touchbarconfig/touchbar.py -m 2\"" }
+    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 19 using {control down, option down, shift down}\r do shell script \"python3 ~/touchbarconfig/touchbar.py -m 2\"" }
   },
   {
-    "title": "[ 3 ]'",
+    "title": "3'",
     "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
     "actionAppleScript": { "inline": "tell application \"System Events\" to key code 20 using control down\r do shell script \"python3 ~/touchbarconfig/touchbar.py -w 3\"" },
-    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 20 using {control down, option down}\r do shell script \"python3 ~/touchbarconfig/touchbar.py -m 3\"" }
+    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 20 using {control down, option down, shift down}\r do shell script \"python3 ~/touchbarconfig/touchbar.py -m 3\"" }
   },
   {
-    "title": "4'",
+    "title": "4",
     "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
     "actionAppleScript": { "inline": "tell application \"System Events\" to key code 21 using control down\r do shell script \"python3 ~/touchbarconfig/touchbar.py -w 4\"" },
-    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 21 using {control down, option down}\r do shell script \"python3 ~/touchbarconfig/touchbar.py -m 4\"" }
+    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 21 using {control down, option down, shift down}\r do shell script \"python3 ~/touchbarconfig/touchbar.py -m 4\"" }
   },
   {
     "title": "5",
     "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
     "actionAppleScript": { "inline": "tell application \"System Events\" to key code 23 using control down\r do shell script \"python3 ~/touchbarconfig/touchbar.py -w 5\"" },
-    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 23 using {control down, option down}\r do shell script \"python3 ~/touchbarconfig/touchbar.py -m 5\"" }
+    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 23 using {control down, option down, shift down}\r do shell script \"python3 ~/touchbarconfig/touchbar.py -m 5\"" }
   },
   {
-    "title": "6'",
+    "title": "6",
     "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
     "actionAppleScript": { "inline": "tell application \"System Events\" to key code 22 using control down\r do shell script \"python3 ~/touchbarconfig/touchbar.py -w 6\"" },
-    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 22 using {control down, option down}\r do shell script \"python3 ~/touchbarconfig/touchbar.py -m 6\"" }
+    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 22 using {control down, option down, shift down}\r do shell script \"python3 ~/touchbarconfig/touchbar.py -m 6\"" }
   },
   {
     "title": "7",
     "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
     "actionAppleScript": { "inline": "tell application \"System Events\" to key code 26 using control down\r do shell script \"python3 ~/touchbarconfig/touchbar.py -w 7\"" },
-    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 26 using {control down, option down}\r do shell script \"python3 ~/touchbarconfig/touchbar.py -m 7\"" }
+    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 26 using {control down, option down, shift down}\r do shell script \"python3 ~/touchbarconfig/touchbar.py -m 7\"" }
   },
   {
     "title": "8",
     "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
     "actionAppleScript": { "inline": "tell application \"System Events\" to key code 28 using control down\r do shell script \"python3 ~/touchbarconfig/touchbar.py -w 8\"" },
-    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 28 using {control down, option down}\r do shell script \"python3 ~/touchbarconfig/touchbar.py -m 8\"" }
+    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 28 using {control down, option down, shift down}\r do shell script \"python3 ~/touchbarconfig/touchbar.py -m 8\"" }
   },
   {
     "title": "9",
     "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
     "actionAppleScript": { "inline": "tell application \"System Events\" to key code 25 using control down\r do shell script \"python3 ~/touchbarconfig/touchbar.py -w 9\"" },
-    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 25 using {control down, option down}\r do shell script \"python3 ~/touchbarconfig/touchbar.py -m 9\"" }
+    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 25 using {control down, option down, shift down}\r do shell script \"python3 ~/touchbarconfig/touchbar.py -m 9\"" }
   },
   {
     "title": "0",
     "width": 40, "type": "staticButton", "bordered": false, "action": "appleScript", "longAction": "appleScript",
     "actionAppleScript": { "inline": "tell application \"System Events\" to key code 29 using control down\r do shell script \"python3 ~/touchbarconfig/touchbar.py -w 10\"" },
-    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 29 using {control down, option down}\r do shell script \"python3 ~/touchbarconfig/touchbar.py -m 10\"" }
+    "longActionAppleScript": { "inline": "tell application \"System Events\" to key code 29 using {control down, option down, shift down}\r do shell script \"python3 ~/touchbarconfig/touchbar.py -m 10\"" }
   },
   {
     "title": "screenshot", "type": "group", "items": 
