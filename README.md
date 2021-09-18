@@ -29,7 +29,7 @@ Forward delete, home, and end keys.
 
 The quotations indicating how many windows exist in a given workspace only track when you are moving existing windows between workspaces.
 
-Further development is needed to get notifications upon opening and closing applications.
+Further development is needed to get system updates to script window monitoring upon opening and closing applications.
 
 # How to Set up:
 
