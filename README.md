@@ -3,7 +3,11 @@
 
 # What does it do?
 
-The icons labelled I-X will move you to desktops 1-10 when you press them. Square brackets will indicate the current desktop.
+The icons labelled I-X will move you to desktops 1-10 when you press them. 
+
+Square brackets will indicate the current desktop.
+
+Quotation marks indicate how many windows are in each desktop (NOT FULLY WORKING, SEE LIMITATIONS)
 
 When you hold them, they will send your focused window to the specified desktop.
 
@@ -19,6 +23,12 @@ Standard multimedia controls.
 
 Forward delete, home, and end keys.
 
+# What are the limitations?
+
+The quotations indicating how many windows exist in a given workspace only track when you are moving existing windows between workspaces.
+
+Further development is needed to get notifications upon opening and closing applications.
+
 # How to Set up:
 
 1. Open spotlight and search "Mission Control" and add desktops until you have 10
@@ -31,8 +41,9 @@ Forward delete, home, and end keys.
 4. Install Amethyst https://github.com/ianyh/Amethyst
 5. Edit the Amethyst keyboard shortcuts for "Throw Focused Window to Space [1-10] to control+option+[1,2,3..0]
 <img width="503" alt="image" src="https://user-images.githubusercontent.com/90871823/133690533-74888754-fe8d-424c-9b3c-8aaeef6893c8.png">
-6. Put my items.json in ~/Library/Application\ Support/MTMR/
 
-7. Put my .touchbar.py in ~
+6. Clone my repository to ~
+
+7. Move my items.json to ~/Library/Application\ Support/MTMR/
 
 Enjoy :)
