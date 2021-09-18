@@ -35,14 +35,13 @@ Further development is needed to get system updates to script window monitoring 
 
 1. Open spotlight and search "Mission Control" and add desktops until you have 10
 2. Go to System Preferences > Keyboard > Shortcuts > Mission Control
-3. Check "Switch to Desktop [1-10] and set the keyboard shortcuts to control+[1,2,3...0]
-
+3. Make it look like this: (^ is the control key)
 <img width="646" alt="image" src="https://user-images.githubusercontent.com/90871823/133690437-90670d3d-e017-4fe1-b44c-5588c9253044.png">
 
-3. Install MTMR https://github.com/toxblh/mtmr
-4. Install Amethyst https://github.com/ianyh/Amethyst
-5. Clone my repository to ~
+4. Install MTMR https://github.com/toxblh/mtmr
+5. Install Amethyst https://github.com/ianyh/Amethyst
+6. Clone my repository to ~
 
-6. Move my items.json to ~/Library/Application\ Support/MTMR/
+7. Move my items.json to ~/Library/Application\ Support/MTMR/
 
 Enjoy :)
