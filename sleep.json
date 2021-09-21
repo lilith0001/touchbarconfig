@@ -1,0 +1,5 @@
+[
+  {"type": "staticButton", "title": "", "width": 1000, "bordered": false, "action": "appleScript",
+    "actionAppleScript": { "inline": "do shell script \"~/touchbarconfig/./wake.sh\"" }
+  }
+]
