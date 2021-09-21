@@ -29,6 +29,8 @@ Forward delete, home, and end keys.
 
 The quotations indicating how many windows exist in a given workspace only track when you are moving existing windows between workspaces.
 
+Basically you can hold the current workspace to remove a quotation and hold a different workspace to add a quotation. Until I can make it better using swift or objc.
+
 Further development is needed to get system updates to script window monitoring upon opening and closing applications.
 
 # How to Set up:
@@ -40,9 +42,10 @@ Further development is needed to get system updates to script window monitoring 
 3. Install MTMR https://github.com/toxblh/mtmr
 4. Install Amethyst https://github.com/ianyh/Amethyst
 5. Clone my repository to ~
+6. check if you have python by running the command `python3 -V` If not installed, get it from https://www.python.org/downloads/release/python-397/
 
-6. run the command `python3 ~/touchbarconfig/setup.py`
-7. start Amethyst
-8. start MTMR
+7. run the command `python3 ~/touchbarconfig/setup.py`
+8. start Amethyst
+9. start MTMR
 
 Enjoy :)
